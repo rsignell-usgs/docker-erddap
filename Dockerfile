@@ -38,3 +38,4 @@ ENTRYPOINT ["/entrypoint.sh"]
 
 EXPOSE 8080 8443
 CMD ["catalina.sh", "run"]
+ADD ftp://ftp.unidata.ucar.edu/pub/netcdf-java/v4.6/netcdfAll-4.6.8.jar $CATALINA_HOME/webapps/erddap/WEB-INF/lib/netcdfAll-latest.jar 
